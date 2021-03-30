@@ -497,8 +497,8 @@ const codeVisitor = {
     ReturnStatement: entries(coverStatement),
     ThrowStatement: entries(coverStatement),
     TryStatement: entries(coverStatement),
-    VariableDeclaration: entries(), // ignore processing only
-    VariableDeclarator: entries(coverVariableDeclarator),
+    VariableDeclaration: entries(coverStatement), // ignore processing only
+    VariableDeclarator: entries(/* coverVariableDeclarator */),
     IfStatement: entries(
         blockProp('consequent'),
         blockProp('alternate'),
