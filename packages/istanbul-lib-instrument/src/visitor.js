@@ -215,7 +215,7 @@ class VisitState {
         } else {
             console.error(
                 'Unable to insert counter for node type:',
-                path.node.type
+                path.node.type, path.node.loc
             );
         }
     }
